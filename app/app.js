@@ -24,10 +24,10 @@
     },
     template: ` <div class="controls field has-addons">
                         <div class="control is-expanded">
-                            <input v-model="message" v-on:keydown.enter="send" class="input is-primary" placeholder="Write message">
+                            <input v-model="message" v-on:keydown.enter="send" class="input is-primary" placeholder="Escribir mensaje">
                         </div>
                         <div class="control">
-                            <button v-on:click="send" :disabled="!message" class="button is-primary">Send</button>
+                            <button v-on:click="send" :disabled="!message" class="button is-primary">Enviar</button>
                         </div>
                     </div>`,
     methods: {
@@ -51,10 +51,10 @@
     template: `<div id="nameInput" v-show="!isLogged">
                         <div class="field is-grouped">
                             <div class="control">
-                                <input v-model="userName" v-on:keydown.enter="sendUserName" class="input is-primary" placeholder="Your name">
+                                <input v-model="userName" v-on:keydown.enter="sendUserName" class="input is-primary" placeholder="Nombre">
                             </div>
                             <div class="control">
-                                <button v-on:click="sendUserName" :disabled="!userName" class="button is-primary">Enter</button>
+                                <button v-on:click="sendUserName" :disabled="!userName" class="button is-primary">Aceptar</button>
                             </div>
                         </div>
                     </div>`,
@@ -71,7 +71,7 @@
   Vue.component('users', {
     props: ['users'],
     template: ` <div>
-                        <h4 class="title is-4">Current users ({{users.length}})</h4>
+                        <h4 class="title is-4">Usuarios Actuales ({{users.length}})</h4>
                         <ul>
                             <li v-for="user in users">
                                 <div class="media-content">
