@@ -29,7 +29,7 @@ io.on('connection', function(socket) {
     socket.emit('update-users', users);
 
     socket.on('send-msg', function(data) {
-        var newMessage = { text : data.message, user : data.user, date : (new Date().toString()) };//dateFormat(new Date(), 'longTime') };
+        var newMessage = { text : data.message, user : data.user, date : (new Date().getTime()) };//dateFormat(new Date(), 'longTime') };
         messages.push(newMessage);
         io.emit('read-msg', newMessage);
     });
