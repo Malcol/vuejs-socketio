@@ -30,7 +30,7 @@ io.on('connection', function(socket) {
     socket.emit('update-users', users);
 
     socket.on('send-msg', function(data) {
-        var newMessage = { text : data.message, user : data.user, date : (new Date(now + 7200)) };//dateFormat(new Date(), 'longTime') };
+        var newMessage = { text : data.message, user : data.user, date : (new Date((newDate().getTime()) + 7200)) };//dateFormat(new Date(), 'longTime') };
         messages.push(newMessage);
         io.emit('read-msg', newMessage);
     });
