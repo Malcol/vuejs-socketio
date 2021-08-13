@@ -21,7 +21,6 @@
     "font-awesome": "^4.7.0",
     "serve-favicon": "^2.4.3",
     "socket.io": "^2.4.0",
-    "vue": "^2.4.2",
-    "xmlhttprequest-ssl": "^1.6.2"
+    "vue": "^2.4.2"
   }
 }
