@@ -5,9 +5,8 @@
   "author": "Cristian Botella Hurtado <cri.bh6@gmail.com",
   "main": "server.js",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cbh6/vuejs-socketio-chat"
+  "engines": {
+    "node": "14.x"
   },
   "keywords": [
     "node",
